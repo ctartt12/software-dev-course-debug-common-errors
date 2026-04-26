@@ -25,8 +25,7 @@ Think about which debugging methods you found most useful and how you might appl
 // This program is intended to display a simple prompt in the console but fails to run.
 
 console.log("Welcome to the bootcamp") 
-// What’s Wrong? syntax error : There was a missing closing "(" and ("")
-
+// What’s Wrong? Syntax error, there are no closing quotes or parentheses and the string isnt properly closed with a ( ; )
 
 
 // Program B
@@ -39,7 +38,7 @@ for (let i = 0; i < numbers.length; i++) {
   console.log(doubled);
 }
 
-// What’s Wrong? logical error : the spelling out of 8 can not be multiplied by 2,
+// What’s Wrong? Runtime error "Eight" is being used like a string and you cant multiply a sting with a number. So when the loop attempts to run it stops and gives you a Nan error  
 
 
 
@@ -59,4 +58,4 @@ function isPrime(num) {
 }
 
 console.log(isPrime(7)); 
-// Expected true but gets false because the prime status was wrong
+//What's Wrong? Logic error the code runs fine but gives the wrong output because if (num % i === 0) doesnt search if a number is a prime if divided. 
